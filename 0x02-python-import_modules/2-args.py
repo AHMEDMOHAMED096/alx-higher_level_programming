@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 
 import sys
-
 if __name__ == "__main__":
     args = sys.argv[1:]
     args_num = len(args)
 
-    if args_num == 1:
-        print("Number of argument: {}".format(args_num))
+    if args_num == 0:
+        print("Number of arguments: .")
+    elif args_num == 1:
+        print("Number of argument: {}:".format(args_num))
+        print("1: {}".format(args[0]))
     else:
-        print("Number of arguments: {}".format(args_num))
+        print("Number of arguments: {}:".format(args_num))
+        for i in range(args_num):
+            print("{}: {}".format(i + 1, args[i]))
 
-    for i in range(args_num):
-        print("{}: {}".format(i + 1, args[i]))
