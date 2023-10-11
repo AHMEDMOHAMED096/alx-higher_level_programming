@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
+import sys
 if __name__ == "__main__":
-    import sys
     args = sys.argv[1:]
     args_num = len(args)
 
