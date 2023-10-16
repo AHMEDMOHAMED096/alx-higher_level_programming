@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("".join(["{}{}".format(chr(122 - i), chr(89 - i)) for i in range(26)]))
+for i in range(ord('z'), ord('A') - 1, -1):
+    print("{}{}".format(chr(i + 32), chr(i)), end='')
