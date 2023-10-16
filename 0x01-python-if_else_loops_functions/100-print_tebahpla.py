@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-for i in range(ord('z'), ord('A') - 1, -1):
-    print("{}{}".format(chr(i + 32), chr(i)), end='')
+for char in range(122, 96, -1):
+    if char % 2 == 0:
+        print(chr(char), end="")
+    elif char % 2 == 1:
+        print(chr(char - 32), end="")
