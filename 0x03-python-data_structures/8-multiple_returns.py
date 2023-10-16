@@ -2,6 +2,6 @@
 def multiple_returns(sentence):
     output = (len(sentence), sentence[0])
     if sentence == "":
-        return
+        return sentence[0]
     else:
         return output
