@@ -8,7 +8,6 @@ def print_arguments(argv):
 
     if num_args == 0:
         print(f"{num_args} arguments.")
-        print(".")
     elif num_args == 1:
         print(f"{num_args} argument:")
         print("1:", argv[0])
