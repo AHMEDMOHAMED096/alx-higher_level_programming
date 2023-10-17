@@ -14,7 +14,7 @@ def print_arguments(argv):
     else:
         print(f"{num_args} arguments:")
         for i in range(num_args):
-            print(i+1, ":", argv[i])
+            print(f"{i+1}: {argv[i]")
 
 
 if __name__ == "__main__":
