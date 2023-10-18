@@ -13,8 +13,8 @@ def print_arguments(argv):
         print("1:", argv[0])
     else:
         print(f"{num_args} arguments:")
-        for i in range(num_args):
-            print(i+1, ":", argv[i])
+        for i, arg in enumerate(argv, start=1):
+            print(f"{i}: {arg}")
 
 
 if __name__ == "__main__":
