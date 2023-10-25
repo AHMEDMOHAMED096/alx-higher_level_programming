@@ -102,7 +102,7 @@ class Square:
         Don’t fill lines by spaces when position[1] > 0
         """
         if self.__size == 0:
-            print()
+            print("")
         else:
             print("\n" * self.__position[1], end="")
             for _ in range(self.__size):
