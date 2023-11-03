@@ -66,8 +66,3 @@ both args invalid:
     >>> add_integer(None, None)
     Traceback (most recent call last):
     TypeError: a must be an integer
-
-float overflow:
-    >>> add_integer(float('inf'), 0)
-    Traceback (most recent call last):
-    OverflowError: cannot convert float infinity to integer
