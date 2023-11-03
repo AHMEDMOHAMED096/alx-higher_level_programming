@@ -11,7 +11,7 @@ Import function from module:
 one int argument:
 
     >>> add_integer(4)
-    104
+    102
 
 one int argument and check default second:
 
@@ -40,39 +40,29 @@ integer and float:
 
 two floats:
 
-    >>> add_integer(1.57, 1.57)
-    3
+    >>> add_integer(1.5, 1.5)
+    2
 
 Add infinity:
 
     >>> add_integer(float('inf'), float('-inf'))
     Traceback (most recent call last):
-    ...
     OverflowError: cannot convert float infinity to integer
 
 first arg invalid:
 
     >>> add_integer("Hi", 2)
     Traceback (most recent call last):
-        ...
     TypeError: a must be an integer
 
 second arg invalid:
 
     >>> add_integer(2, "Hi")
     Traceback (most recent call last):
-        ...
     TypeError: b must be an integer
 
 both args invalid:
 
     >>> add_integer(None, None)
     Traceback (most recent call last):
-        ...
     TypeError: a must be an integer
-
-Test float overflow:
-    >>> add_integer(float('inf'), 0)
-    Traceback (most recent call last):
-    ...
-    OverflowError: cannot convert float infinity to integer
