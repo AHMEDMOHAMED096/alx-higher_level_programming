@@ -1,9 +1,7 @@
 #!/usr/bin/python3
+""" Defines a file reading function"""
 
 
 def read_file(filename=""):
-    with open("my_file_0.txt") as my_file:
+    with open(filename) as my_file:
         print(my_file.read())
-
-
-read_file("my_file_0.txt")
