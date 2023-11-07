@@ -6,4 +6,4 @@ def read_file(filename=""):
         print(my_file.read())
 
 
-read_file()
+read_file("my_file_0.txt")
