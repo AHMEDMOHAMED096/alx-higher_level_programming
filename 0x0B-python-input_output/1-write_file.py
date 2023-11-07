@@ -4,6 +4,6 @@
 
 def write_file(filename="", text=""):
     """Writes a string to UTF-8 file"""
-    with open(filename, encoding="utf-8", "w") as my_file:
+    with open(filename, "w", encoding="utf-8") as my_file:
         count = my_file.write(text)
-        print(len(count))
+    return count
