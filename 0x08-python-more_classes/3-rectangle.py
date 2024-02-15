@@ -28,7 +28,9 @@ class Rectangle:
         This method returns nicely readable string representation of an object.
         """
         if self.__width == 0 or self.__height == 0:
-            return '#'
+            return ''
+        else:
+            return '\n'.join(['#' * self.__width] * self.__height)
 
     @property
     def width(self):
