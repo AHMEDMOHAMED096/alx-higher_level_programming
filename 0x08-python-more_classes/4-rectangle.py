@@ -36,7 +36,7 @@ class Rectangle:
         """
         This method returns a printable representation of an object.
         """
-        return f'({self.width}, {self.height})'
+        return f'Rectangle({self.__width}, {self.__height})'
 
     @property
     def width(self):
