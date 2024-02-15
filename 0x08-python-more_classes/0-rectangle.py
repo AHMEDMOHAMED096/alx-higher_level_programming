@@ -2,6 +2,6 @@
 """ This is an empty class named rectangle """
 
 
-class rectangle:
+class Rectangle:
     """ Defines a rectangle """
     pass

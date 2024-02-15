@@ -5,7 +5,7 @@ a rectangle by its width and height
 """
 
 
-class rectangle:
+class Rectangle:
     """ Defines a rectangle
      Attributes:
         width (int): The width of rectangle. It's a private attribute.
