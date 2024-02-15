@@ -9,11 +9,12 @@ class Rectangle:
     """ Defines a rectangle
      Attributes:
         width (int): The width of rectangle. It's a private attribute.
+        height (int): The height of rectangle. It's a private attribute.
     """
 
     def __init__(self, width=0, height=0):
         """
-        The constructor for the Square class.
+        The constructor for the rectangle class.
 
         Parameters:
             width (int, optional): The width of rectangle. Defaults to 0.
@@ -32,7 +33,8 @@ class Rectangle:
         """
         return self.__width
 
-    @width.setter(self, value):
+    @width.setter
+    def width(self, value):
         """
         This is a setter method for the width attribute.
 
@@ -60,7 +62,8 @@ class Rectangle:
         """
         return self.__height
 
-    @height.setter(self, value):
+    @height.setter
+    def height(self, value):
         """
         This is a setter method for the height attribute.
 
