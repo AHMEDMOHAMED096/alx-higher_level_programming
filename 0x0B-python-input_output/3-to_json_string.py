@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+""" imported json module. """
 import json
 """ Defines a function that returns the JSON representation of an object. """
 
