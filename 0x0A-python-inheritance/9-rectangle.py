@@ -13,7 +13,6 @@ class Rectangle(BaseGeometry):
             width (int): The width of the new Rectangle.
             height (int): The height of the new Rectangle.
         """
-        super().__init__()
         super().integer_validator("width", width)
         self.__width = width
         super().integer_validator("height", height)
@@ -27,4 +26,4 @@ class Rectangle(BaseGeometry):
         """
         This method returns nicely readable string representation of an object.
         """
-        return f"[{self.__class__.__name__}] {self.__size}/{self.__size}"
+        return f"[{self.__class__.__name__}] {self.__width}/{self.__height}"
