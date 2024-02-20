@@ -6,3 +6,4 @@ def write_file(filename="", text=""):
     """ A function to write a string to a text file. """
     with open(filename, "w") as myfile:
         myfile.write(text)
+    print(myfile)
