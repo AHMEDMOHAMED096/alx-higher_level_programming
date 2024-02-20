@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-""" imported json module. """
+""" imported sys module
+    imported 5-save_to_json_file module
+    imported 6-load_from_json_file """
 import sys
 from 5-save_to_json_file import save_to_json_file
 from 6-load_from_json_file import load_from_json_file
