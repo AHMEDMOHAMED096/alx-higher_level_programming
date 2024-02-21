@@ -5,13 +5,11 @@
 def pascal_triangle(n):
     """ A function that returns the Pascal’s triangle.
     Returns a list of lists of integers. """
-    triangle = []
-    for i in range(n):
-        if n <= 0:
-            return triangle
-        if not triangle:
-            triangle.append([1])
-    last_element = triangle[-1]
+    if n <= 0:
+        return triangle
+    triangle = [[1]]
+    for i in range(1, n):
+        last_element = triangle[-1]
     new_list = [1]
     for j in range(len(last_element) - 1):
         new_list.append(last_element[j] + last_element[j + 1])
