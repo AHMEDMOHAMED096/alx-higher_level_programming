@@ -24,7 +24,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        Rectangle.number_of_instances+=1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """
@@ -45,7 +45,7 @@ class Rectangle:
         """
         This is a destructor method
         """
-        Rectangle.number_of_instances-=1
+        Rectangle.number_of_instances -= 1
         print('Bye rectangle...')
 
     @property
