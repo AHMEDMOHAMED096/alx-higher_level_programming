@@ -35,7 +35,7 @@ class Rectangle:
             return ''
         else:
             return '\n'.join([Rectangle.print_symbol * self.__width] \
-                                                                        * self.__height)
+                             * self.__height)
 
     def __repr__(self):
         """
