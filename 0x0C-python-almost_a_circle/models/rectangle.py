@@ -155,5 +155,5 @@ class Rectangle(Base):
         """
         This method returns nicely readable string representation of an object.
         """
-        return f"[{self.__class__.__name__}] ({self.id}) {self.__x}/{self.__y}\
+        return f"[{self.__class__.__name__}] ({self.id}) {self.__x}/{self.__y} \
                  - {self.__width}/{self.__height}"
