@@ -148,4 +148,5 @@ class Rectangle(Base):
         This method prints in stdout the Rectangle instance
         with the character #.
         '''
-        return '\n'.join('#' * self.area())
+        for i in range(self.__height):
+            print('#' * self.__width)
