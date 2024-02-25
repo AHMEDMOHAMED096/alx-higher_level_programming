@@ -142,3 +142,9 @@ class Rectangle(Base):
         This method returns the current Rectangle area(int).
         """
         return self.__width * self.__height
+    
+    def display(self):
+        '''
+        This method prints in stdout the Rectangle instance with the character #.
+        '''
+        return '\n'.join('#' * self.area())
