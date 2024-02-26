@@ -12,7 +12,7 @@ class Rectangle(Base):
         y (int): y.
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Creates new instances of rectangle.
+        """ Creates new instances of rectangle.
 
         Args:
             width (int): width of rectangle.
@@ -29,7 +29,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Width retriever.
+        """ Width retriever.
 
         Returns:
             int: width of rectangle.
@@ -38,7 +38,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """Property setter for width of rectangle.
+        """ Property setter for width of rectangle.
 
         Args:
             value (int): width of rectangle.
@@ -52,7 +52,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Height retriever.
+        """ Height retriever.
 
         Returns:
             int: height of rectangle.
@@ -61,7 +61,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """Property setter for height of rectangle.
+        """ Property setter for height of rectangle.
 
         Args:
             value (int): height of rectangle.
@@ -75,7 +75,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x retriever.
+        """ x retriever.
 
         Returns:
             int: x.
@@ -84,7 +84,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """Property setter for x.
+        """ Property setter for x.
 
         Args:
             value (int): x.
@@ -98,7 +98,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y retriever.
+        """ y retriever.
 
         Returns:
             int: y.
@@ -107,7 +107,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """Property setter for y.
+        """ Property setter for y.
 
         Args:
             value (int): y.
@@ -129,7 +129,7 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(name))
 
     def area(self):
-        """Calculates area of a rectangle.
+        """ Calculates area of a rectangle.
 
         Returns:
             int: area.
@@ -137,19 +137,19 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Prints in stdout #."""
+        """ Prints in stdout #. """
         s = '\n' * self.y + \
             (' ' * self.x + '#' * self.width + '\n') * self.height
         print(s, end='')
 
     def _str_(self):
-        """Returns string rectangle."""
+        """ Returns string rectangle."""
         return '[{}] ({}) {}/{} - {}/{}'.\
             format(type(self)._name_, self.id, self.x, self.y, self.width,
                    self.height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
-        """Class that defines properties of Rectangle.
+        """ method that defines properties of Rectangle.
 
         Attributes:
             width (int): width of rectangle.
@@ -169,7 +169,7 @@ class Rectangle(Base):
             self.y = y
 
     def update(self, *args, **kwargs):
-        """Assigns an argument
+        """ Assigns an argument
 
         Args:
             *args (tuple): arg.
@@ -181,7 +181,7 @@ class Rectangle(Base):
             self.__update(**kwargs)
 
     def to_dictionary(self):
-        """Returns the dictionary representation of a Rectangle.
+        """ Returns the dictionary representation of a Rectangle.
 
         Returns:
             dict: rectangle.
