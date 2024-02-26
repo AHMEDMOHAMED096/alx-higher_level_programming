@@ -6,7 +6,7 @@ from models.base import Base
 class Rectangle(Base):
     """ Class that defines properties of Rectangle. """
 
-    def _init_(self, width, height, x=0, y=0, id=None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         """Creates new instances of rectangle.
 
         Args:
@@ -16,7 +16,7 @@ class Rectangle(Base):
             y (int, optional): y. Defaults to 0.
             id (int, optional): Identity number of rectangle. Defaults to None.
         """
-        super()._init_(id)
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
