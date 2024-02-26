@@ -3,8 +3,8 @@
 
 
 class Rectangle(Base):
-    """Rectangle model class.
-
+    """ Rectangle model class."""
+    """
      Attributes:
         width (int): width of rectangle.
         height (int): height of rectangle.
