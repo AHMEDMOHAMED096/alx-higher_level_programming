@@ -24,19 +24,15 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Width retriever.
-
-        Returns:
-            int: width of rectangle.
-        """
+        """Width retriever."""
         return self.__width
 
     @width.setter
     def width(self, value):
         """Property setter for width of rectangle.
 
-        Args:
-            value (int): width of rectangle.
+        Parameters:
+            value (int): New width of rectangle.
 
         Raises:
             TypeError: if width is not an integer.
@@ -47,19 +43,15 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Height retriever.
-
-        Returns:
-            int: height of rectangle.
-        """
+        """Height retriever."""
         return self.__height
 
     @height.setter
     def height(self, value):
         """Property setter for height of rectangle.
 
-        Args:
-            value (int): height of rectangle.
+        Parameters:
+            value (int): New height of rectangle.
 
         Raises:
             TypeError: if height is not an integer.
@@ -70,19 +62,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x retriever.
-
-        Returns:
-            int: x.
-        """
+        """x retriever."""
         return self.__x
 
     @x.setter
     def x(self, value):
         """Property setter for x.
-
-        Args:
-            value (int): x.
 
         Raises:
             TypeError: if x is not an integer.
@@ -93,19 +78,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y retriever.
-
-        Returns:
-            int: y.
-        """
+        """y retriever."""
         return self.__y
 
     @y.setter
     def y(self, value):
         """Property setter for y.
-
-        Args:
-            value (int): y.
 
         Raises:
             TypeError: if y is not an integer.
@@ -115,7 +93,7 @@ class Rectangle(Base):
         self.__y = value
 
     def validate_integer(self, name, value, eq=True):
-        """Method for validating the value."""
+        """A method for validating the value."""
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if eq and value < 0:
@@ -132,7 +110,7 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Prints in stdout #."""
+        """Prints the rectangle in stdout with #."""
         s = '\n' * self.y + \
             (' ' * self.x + '#' * self.width + '\n') * self.height
         print(s, end='')
