@@ -172,3 +172,15 @@ class Rectangle(Base):
 
         self.x = args[3] if len(args) > 3 else kwargs.get('x', self.x)
         self.y = args[4] if len(args) > 4 else kwargs.get('y', self.y)
+
+    def to_dictionary(self):
+        ''' This method returns the dictionary representation of a Rectangle.
+        '''
+        return_dic = {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
+        return return_dic
