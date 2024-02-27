@@ -72,9 +72,9 @@ class Square(Rectangle):
         """
 
         if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+            raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("size must be > 0")
+            raise ValueError("width must be > 0")
         self.__size = value
 
     @property
