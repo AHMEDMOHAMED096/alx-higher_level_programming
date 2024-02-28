@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 ''' Imported json module. '''
 import json
-from rectangle.Rectangle import to_dictionary
 
 
 class Base:
