@@ -37,7 +37,11 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        ''' This method returns a list of instances. '''
+        ''' This method returns a list of instances.
+
+        Returns:
+            A list of instances.
+        '''
         with open(f"{cls.__name__}.json") as file:
             if not file:
                 return []
