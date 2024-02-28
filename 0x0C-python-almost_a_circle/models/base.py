@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' Imported json module. '''
 import json
+from rectangle.Rectangle import to_dictionary
 
 
 class Base:
@@ -65,7 +66,7 @@ class Base:
             return []
         return json.loads(json_string)
 
-    def update(self, **kwargs):
+    def update(self, *args, **kwargs):
         ''' This method assigns an argument to each attribute
         based on args or kwargs '''
         for key, value in kwargs.items():
