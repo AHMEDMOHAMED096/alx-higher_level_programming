@@ -6,7 +6,7 @@ import json
 class Base:
     ''' Base model class. '''
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
         ''' The constructor of Base class. '''
         if id is not None:
@@ -65,4 +65,4 @@ class Base:
         ''' This method assigns an argument to each attribute
         based on args or kwargs '''
         for key, value in kwargs.items():
-           setattr(self, key, value)
+            setattr(self, key, value)
