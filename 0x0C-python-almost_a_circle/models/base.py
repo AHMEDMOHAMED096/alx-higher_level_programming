@@ -65,7 +65,7 @@ class Base:
             return []
         return json.loads(json_string)
 
-    def update(self, *args, **kwargs):
+    def update(self, **kwargs):
         ''' This method assigns an argument to each attribute
         based on args or kwargs '''
         for key, value in kwargs.items():
