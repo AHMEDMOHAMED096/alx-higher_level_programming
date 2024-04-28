@@ -14,8 +14,7 @@ def list_states(username, password, database_name):
         port=3306
     )
     cursor = conn.cursor()
-    query = ("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC")
-    cursor.execute(query, ('N%',))
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
     states = cursor.fetchall()
 
     for state in states:
