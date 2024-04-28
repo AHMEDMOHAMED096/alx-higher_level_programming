@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
 
-def change_state_name(username, password, database_name):
+def update_state_name(username, password, database_name):
     """Create engine to connect to the MySQL server"""
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
                            .format(username, password, database_name))
@@ -28,4 +28,4 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database_name = sys.argv[3]
 
-    change_state_name(username, password, database_name)
+    update_state_name(username, password, database_name)
