@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ Import MySQLdb and sys modules"""
 import MySQLdb
 import sys
