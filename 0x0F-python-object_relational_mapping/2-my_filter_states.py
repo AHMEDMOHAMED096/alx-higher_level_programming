@@ -14,7 +14,7 @@ def list_states(username, password, database_name, state_name):
         port=3306
     )
     cursor = conn.cursor()
-    query = ("SELECT * FROM states WHERE name = %s ORDER BY id ASC")
+    query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
     cursor.execute(query, (state_name,))
     states = cursor.fetchall()
 
