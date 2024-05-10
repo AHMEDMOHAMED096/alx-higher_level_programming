@@ -5,7 +5,7 @@ import sys
 
 url = sys.argv[1]
 
-with request.urlopen(url) as response:
+with urllib.request.urlopen(url) as response:
     headers = response.getheaders()
 
     for header in headers:
