@@ -3,9 +3,10 @@
 from urllib import request
 import sys
 
+
 url = sys.argv[1]
 
-with urllib.request.urlopen(url) as response:
+with request.urlopen(url) as response:
     headers = response.getheaders()
 
     for header in headers:
