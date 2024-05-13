@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Import necessary modules
+""" Import necessary modules """
 import sys
 from urllib import request
 
