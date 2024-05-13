@@ -1,17 +1,24 @@
-# Import required modules
-import urllib.request
-import urllib.parse
+#!/usr/bin/python3
+# # Import necessary modules
 import sys
+from urllib import request, parse
 
 
-url = sys.argv[1]
-email = sys.argv[2]
+def send_post_request(url, email):
+    """
+    This function takes a URL and an email as input and
+    sends a POST request to the URLwith the email as a parameter
+    and prints the body of the response.
+    """
 
-data = urllib.parse.urlencode({'email': email}).encode()
+    data = parse.urlencode({'email': email}).encode()
+    req = request.Request(url, data=data)
 
-request = urllib.request.Request(url, data=data)
+    with request.urlopen(req) as response:
+        print(response.read().decode('utf-8'))
 
-with urllib.request.urlopen(request) as response:
-    body = response.read().decode('utf-8')
 
-    print(f'Your email is: {body}')
+if __name__ == "__main__":
+    url = sys.argv[1]
+    email = sys.argv[2]
+    send_post_request(url, email)
