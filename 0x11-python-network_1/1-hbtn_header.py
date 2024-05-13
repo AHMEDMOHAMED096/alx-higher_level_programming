@@ -4,6 +4,7 @@ This script retrieves and prints the 'X-Request-Id'
 from the headers of a given URL.
 
 The URL is passed as a command-line argument to the script.
+Usage: ./1-hbtn_header.py URL
 """
 
 # Import necessary modules
