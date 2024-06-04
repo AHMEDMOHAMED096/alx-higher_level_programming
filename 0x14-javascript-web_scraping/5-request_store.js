@@ -8,7 +8,6 @@ const filePath = process.argv[3];
 const options = {
   url,
   method: 'GET',
-  json: true
 };
 
 request(options, function (error, response, body) {
