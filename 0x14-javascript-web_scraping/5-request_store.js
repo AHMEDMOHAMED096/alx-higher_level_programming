@@ -7,7 +7,7 @@ const filePath = process.argv[3];
 
 const options = {
   url,
-  method: 'GET',
+  method: 'GET'
 };
 
 request(options, function (error, response, body) {
