@@ -6,8 +6,7 @@ const url = process.argv[2];
 
 const options = {
   url,
-  method: 'GET',
-  json: true
+  method: 'GET'
 };
 
 request(options, function (error, response, body) {
